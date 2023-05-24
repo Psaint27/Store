@@ -12,7 +12,7 @@ body{
     width: 80%;
     margin: 0 auto;
 }
-/*  
+ 
 header {
     background:	#d3d3d3;
 }
@@ -26,7 +26,6 @@ header::after {
 
 .logo {
     float: left;
-    padding: 2px 0;
     width: 22px;
 }
 
@@ -35,7 +34,7 @@ nav {
     float: right;
 }
 
-/*
+ 
 li{
     list-style: none;
 }
@@ -51,8 +50,7 @@ li{
 nav li:first-child {
     border-right: none;
 }
-*/
-/*
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -77,12 +75,11 @@ nav a {
     text-transform: uppercase;
     font-size: 11px;
 }
-/*
+
 nav a:hover {
     color: #000;
 }
-*/
-/*
+
 a {
     color: #000;
     cursor: pointer;  
@@ -105,7 +102,7 @@ nav a::before {
 nav a:hover::before {
     width: 80%;
 }
-*/
+
 
 
 
@@ -122,14 +119,19 @@ nav a:hover::before {
 }
 
 /* Mobile Navigation */
-.mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
+.header-navigation_mobile-container {
+    display: flex;
+}
+
+.header-logo_container {
+    width: 100%;
+    max-width: 50%;
+}
+
+.header-icon_hamburger-container {
+    width: 100%;
+    max-width: 50%;
+}
 
   .topnav {
     /*overflow: hidden;*/
@@ -151,12 +153,8 @@ nav a:hover::before {
     display: block;
   }
   /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+  a.icon {
+    float: right;
   }
   
   /*Add a grey background color on mouse-over */
@@ -173,21 +171,16 @@ nav a:hover::before {
 
 
 /* Responsiveness */
-/*
-@media (max-width: 768px) {
-    .header_desktop-nav {
+
+@media only screen and (max-width: 768px) {
+    .header-navigation_desktop-container {
         display: none;
-    
     }
-    }
+}
 
 
 @media (min-width: 769px) {
-    .header_desktop-nav {
-        display: block;
-    }
-    
-    .header_mobile-nav {
+    .header-navigation_mobile-container {
         display: none;
     }
 }

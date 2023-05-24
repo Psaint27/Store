@@ -19,12 +19,10 @@
     <header class="header">
       <div class="header-wrapper">
         <!-- Desktop Navigation -->
-        <!-- <div class="header_desktop-nav"> -->
-
         <!-- Simulate a laptop / destop -->
-        <!-- <div class="desktop-container">
+        <div class="header-navigation_desktop-container">
               <img
-                src="/images/nike-logo.png"
+                src="/Store/images/nike-logo.png"
                 alt="logo"
                 class="logo"
                 width="50"
@@ -39,12 +37,11 @@
                   <li class="nav-li"><a href="#">Contact</a></li>
                 </ul>
               </nav>
-            </div>
-          </div> -->
+          </div>
 
         <!-- Mobile Navigation -->
         <!-- Simulate a smartphone / tablet -->
-        <div class="header-navigation_mobile-wrapper">
+        <div class="header-navigation_mobile-container">
 
           <!-- Nike Icon -->
           <div class="header-logo_container">
@@ -59,7 +56,7 @@
           </div>
 
           <!-- Hamburger Icon -->
-          <div class="header-navigation_hamburger-icon">
+          <div class="header-icon_hamburger-container">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -78,16 +75,6 @@
         </div> 
     </header>
     <!-- Scripts -->
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+    <script src="/script.js"></script>
   </body>
 </html>
