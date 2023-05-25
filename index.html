@@ -18,26 +18,34 @@
     <!--Navigation bar-->
     <header class="header">
       <div class="header-wrapper">
+        
         <!-- Desktop Navigation -->
         <!-- Simulate a laptop / destop -->
         <div class="header-navigation_desktop-container">
+
+          <!-- Nike Icon -->
+          <div class="header-logo_container">
+            <div class="logo">
               <img
                 src="/Store/images/nike-logo.png"
                 alt="logo"
-                class="logo"
-                width="50"
+                width="100%"
               />
-           
-              <nav class="nav-destkop-container" >
-                <ul class="nav-ul-desktop">
-                  <li class="nav-li"><a href="#">Home</a></li>
-                  <li class="nav-li"><a href="#">About</a></li>
-                  <li class="nav-li"><a href="#">Pricing</a></li>
-                  <li class="nav-li"><a href="#">Blog</a></li>
-                  <li class="nav-li"><a href="#">Contact</a></li>
-                </ul>
-              </nav>
+            </div>
           </div>
+              
+           <!-- Desktop links -->
+          <nav class="nav-destkop-container" >
+            <ul class="nav-ul-desktop">
+              <li class="nav-desktop_links"><a class="nav-desktop_a" href="#">Home</a></li>
+              <li class="nav-desktop_links"><a class="nav-desktop_a" href="#">About</a></li>
+              <li class="nav-desktop_links"><a class="nav-desktop_a" href="#">Pricing</a></li>
+              <li class="nav-desktop_links"><a class="nav-desktop_a" href="#">Blog</a></li>
+              <li class="nav-desktop_links"><a class="nav-desktop_a" href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+        </div>
 
         <!-- Mobile Navigation -->
         <!-- Simulate a smartphone / tablet -->
@@ -49,8 +57,7 @@
               <img
                 src="/Store/images/nike-logo.png"
                 alt="logo"
-                class="logo"
-                width="50"
+                width="100%"
               />
             </div>
           </div>
@@ -65,14 +72,15 @@
         </div>
       </div>
 
-      <div class="topnav">
-          <div id="myLinks">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Pricing</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </div> 
+      <nav class="header-navigation_hamburger-links">
+        <ul id="hamburger-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> 
+      </nav>
     </header>
     <!-- Scripts -->
     <script src="/script.js"></script>
