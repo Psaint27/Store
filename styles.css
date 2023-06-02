@@ -9,6 +9,8 @@ body{
     font-family: 'Arial', Helvetica, sans-serif;
     font-weight: 400;
     color: #000;
+    margin: 0; 
+    padding: 0; 
 }
 
 .header {
@@ -18,7 +20,8 @@ body{
     background-color: #d3d3d3;
 }
 
-.header-wrapper {
+ .header-wrapper { 
+    /* Either put wrapper for each section or , wrapper like the example listed below */
     padding: 0 1.5rem;
     height: auto;
 }
@@ -173,6 +176,10 @@ a.icon {
     width: 100%; 
 }
 
+.Kobe_container {
+    margin-top: -4px;
+}
+
   .kobe-wrapper {
         width: 100%;
         display: flex;
@@ -181,12 +188,12 @@ a.icon {
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: space-between;
   } 
   
   .kobe-col {
     max-width:50%;
     width: 100%;
+    padding: 0px 40px;
   }
 
   .KobebyTheNumbers {
@@ -198,6 +205,18 @@ a.icon {
     width: 100%;
     /* justify-content:space-around; */
   }
+
+  .kobe-text_container{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+
+  }
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
 
   .bryant {
     text-align: center;
