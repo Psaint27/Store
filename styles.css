@@ -20,7 +20,8 @@ body{
     background-color: #d3d3d3;
 }
 
- .header-wrapper { 
+ .header-wrapper,
+ .kobe-wrapper { 
     /* Either put wrapper for each section or , wrapper like the example listed below */
     padding: 0 1.5rem;
     height: auto;
@@ -172,38 +173,39 @@ a.icon {
 
 }
 
+
+  /* Kobe image responsiveness in mobile */
 .hero-image_wrapper img {
     width: 100%; 
 }
+
+
 
 .Kobe_container {
     margin-top: -4px;
 }
 
   .kobe-wrapper {
-        width: 100%;
-        display: flex;
-        background-color: rgb(211, 211, 211);
-        align-content: flex-end;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    flex-direction: column;
   } 
   
   .kobe-col {
-    max-width:50%;
     width: 100%;
-    padding: 0px 40px;
-  }
+    padding-right: 0px;
+    padding-top: 10px;
 
-  .KobebyTheNumbers {
-    width: 100%;
-    /* justify-content: space-around; */
   }
+  
+    .KobebyTheNumbers {
+        max-width: 100%;
+        height: auto;
+    }
 
   .kobe-text {
-    width: 100%;
-    /* justify-content:space-around; */
+    font-size: 16px;
   }
 
   .kobe-text_container{
@@ -259,6 +261,17 @@ a.icon {
   .button2:hover {
     background-color: #9400D3;
     color: white;
+  }
+
+  @media screen and (min-width: 768px) {
+    .kobe-wrapper {
+        width: 100%;
+        display: flex;
+        background-color: rgb(211, 211, 211);
+        align-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
   }
   
 
